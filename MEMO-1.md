@@ -25,9 +25,37 @@ Pour Network Statistic affiche les connexions
 > * __a__ affiche connexions actives TCP/UDP + port
 > * __n__ affiche adresse au format numérique
 
-### NMAP
+### NMAP | SS
 
 Permet de rechercher les ports en écoute
+>nmap -p 80 IP_XXX.XXX.XXX.XXX
 
+### CONFIGURATION RESEAU
 
-###
+Pour la configuration réseau 
+> /etc/network/interfaces
+Pour un serveur 
+> allow netplug auto <br>
+>   iface inet static <br>
+>   address IP_XXX.XXX.XXX.XXX/XX <br>
+>   gateway IP_XXX.XXX.XXX.XXX
+
+Pour la configuration des DNS 
+> /etc/resolv.conf
+
+Toujours recharger le service aprés modif 
+> systemctl reload *nom_du_service* <br>
+> systemctl status *nom_du_service*
+
+### EMPLACEMENTS UTILES
+
+* /etc = tout ce qui concerne configuration
+* /home = dossier utilisateur
+* /etc/password = liste des utilisateurs
+* /etc/group = liste des groupes
+* /etc/network/interfaces = configuration réseaux
+* /etc/resolv.conf = configuration des DNS
+* /etc/apt/sources.list = liste repo debian
+
+### APT
+
