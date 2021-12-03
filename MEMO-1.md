@@ -17,22 +17,22 @@ Permet de voir les processus en cours et trouver la ligne contenant *terme_a_rec
 ### Rechercher un fichier
 
 Pour rechercher un fichier par son nom complet ou incomplet avec * 
-> * find /*localisation_dans_arboresence* -name *nom_du_fichier* 
-> * find / -name sources.list
-> * find /*localisation_dans_arboresence* -name _\*m_du_fichier_imcompl\*_ 
-> * find /etc -name '\*resolv.\*' 
+> find /*localisation_dans_arboresence* -name *nom_du_fichier* <br>
+> find / -name sources.list <br>
+> find /*localisation_dans_arboresence* -name _\*m_du_fichier_imcompl\*_ <br>
+> find /etc -name '\*resolv.\*' <br>
 
 ### NETSTAT
 
 Pour Network Statistic affiche les connexions 
-> * netstat -tpln ou -nlt ou -an
-> * __a__ affiche connexions actives TCP/UDP + port
-> * __n__ affiche adresse au format numérique
+> netstat -tpln ou -nlt ou -an
+* __a__ affiche connexions actives TCP/UDP + port
+* __n__ affiche adresse au format numérique
 
 ### NMAP | SS
 
 Permet de rechercher les ports en écoute
->nmap -p 80 IP_XXX.XXX.XXX.XXX
+> nmap -p 80 IP_XXX.XXX.XXX.XXX
 
 ### CONFIGURATION RESEAU
 
@@ -53,13 +53,13 @@ Toujours recharger le service aprés modif
 
 ### EMPLACEMENTS UTILES
 
-* /etc = tout ce qui concerne configuration
-* /home = dossier utilisateur
-* /etc/password = liste des utilisateurs
-* /etc/group = liste des groupes
-* /etc/network/interfaces = configuration réseaux
-* /etc/resolv.conf = configuration des DNS
-* /etc/apt/sources.list = liste repo debian
+- /etc = tout ce qui concerne configuration
+- /home = dossier utilisateur
+- /etc/password = liste des utilisateurs
+- /etc/group = liste des groupes
+- /etc/network/interfaces = configuration réseaux
+- /etc/resolv.conf = configuration des DNS
+- /etc/apt/sources.list = liste repo debian
 
 ### APT
 
@@ -83,4 +83,3 @@ Si besoin
 > chmod *o+/- droit r w x * *NOM_FICHIER*
 
 Port http=80 https=443
- 
