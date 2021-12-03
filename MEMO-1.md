@@ -2,7 +2,11 @@
 
 ### Lecture des logs
 
-Pour voir les logs en temps réel
+Les logs sont stockés dans /var/log
+> cat affiche le contenu du fichier en integralité <br>
+> less affiche le fichier en laissant la possibilité de naviguer dans le contenu
+
+Pour voir les logs en temps réel 
 > tail -f /var/log/*nom_du_service*
 
 ### PS AUX | GREP
@@ -59,3 +63,16 @@ Toujours recharger le service aprés modif
 
 ### APT
 
+Pour voir le détail d'un paquet 
+> apt show *NOM_DU_PAQUET*
+
+Pour chercher un paquet
+> apt search -n *TERME_A_CHERCHER*
+
+Si plusieurs termes 
+> apt search -n *TERME_1* -n *TERME_2*
+
+### HTTPS SSL-TLS / AUTO CERTIFICATION / CERTIFICAT 
+
+Certificat = fichier__.crt__
+Clé privée = fichier__.key__
