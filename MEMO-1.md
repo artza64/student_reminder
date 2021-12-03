@@ -74,5 +74,13 @@ Si plusieurs termes
 
 ### HTTPS SSL-TLS / AUTO CERTIFICATION / CERTIFICAT 
 
-Certificat = fichier__.crt__
-Clé privée = fichier__.key__
+Certificat = fichier __.crt__ => /etc/ssl/certs <br>
+Clé privée = fichier __.key__ => /etc/ssl/private<br>
+La clé privée doit rester privée => vérifier les droits sur le fichier <br>
+Si besoin 
+> chown *NOM_USER* *NOM_FICHIER* <br>
+> chgrp *NOM_GROUPE* *NOM_FICHIER* <br>
+> chmod *o+/- droit r w x * *NOM_FICHIER*
+
+Port http=80 https=443
+ 
