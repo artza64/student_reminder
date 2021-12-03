@@ -13,18 +13,21 @@ Permet de voir les processus en cours et trouver la ligne contenant *terme_a_rec
 ### Rechercher un fichier
 
 Pour rechercher un fichier par son nom complet ou incomplet avec * 
-> find /*localisation_dans_arboresence* *nom_du_fichier* 
-> find /*localisation_dans_arboresence* _\*m_du_fichier_imcompl\*_ 
+> * find /*localisation_dans_arboresence* -name *nom_du_fichier* 
+> * find / -name sources.list
+> * find /*localisation_dans_arboresence* -name _\*m_du_fichier_imcompl\*_ 
+> * find /etc -name '\*resolv.\*' 
 
 ### NETSTAT
 
 Pour Network Statistic affiche les connexions 
-> netstat -tpln ou -nly ou -an
-> __a__ affiche connexions actives TCP/UDP + port
-> __n__ affiche adresse au format numérique
+> * netstat -tpln ou -nlt ou -an
+> * __a__ affiche connexions actives TCP/UDP + port
+> * __n__ affiche adresse au format numérique
 
 ### NMAP
 
 Permet de rechercher les ports en écoute
+
 
 ###
